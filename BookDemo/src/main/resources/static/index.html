@@ -1,0 +1,137 @@
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+<div class="container">
+	<div class="main">
+		<div class="main-center">
+			<h5>BOOK.</h5>
+
+
+			<div class="form-group">
+				<label for="fname">TITLE</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user fa"
+						aria-hidden="true"></i></span> <input type="text" id="title"
+						class="form-control" name="title" placeholder="Title">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="lname">AUTHOR(S)</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-envelope fa"
+						aria-hidden="true"></i></span> <input type="text" id="author"
+						class="form-control" name="author" placeholder="Author(s)">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="country">ISBN</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-users fa"
+						aria-hidden="true"></i></span> <input type="number" id="isbn"
+						class="form-control" name="isbn" placeholder="ISBN">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="subject">Publication Date</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+						aria-hidden="true"></i></span> <input type="date" id="dt"
+						class="form-control" name="dt">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="subject">Price</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+						aria-hidden="true"></i></span> <input type="number" id="price"
+						class="form-control" name="price">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="subject">Book Genre</label>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock fa-lg"
+						aria-hidden="true"></i></span> <input type="text" id="genre"
+						class="form-control" name="genre">
+				</div>
+			</div>
+
+			<input type="submit" value="save OR update" onclick="save()"> 
+			<input type="submit" value="search" onclick="search()">
+               <input type="submit" value="clear" onclick="clearsalltext()">
+
+
+
+		</div>
+		<!--main-center"-->
+
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="index.js"></script>
+	</div>
+	<div class="row mb-4">
+		<div class="col-12 text-center pt-3">
+			<h1>Book Tables</h1>
+
+		</div>
+	</div>
+	<div class="row justify-content-md-center mb-4">
+		<div class="col-md-6">
+
+			<!--start code-->
+			<div class="widget">
+
+
+				<!-- widget content -->
+				<table class="table small mb-5" id="table">
+					<thead class="thead-light">
+						<tr>
+
+
+							<th scope="col">Title</th>
+							<th scope="col">author</th>
+							<th scope="col">isbn</th>
+							<th scope="col">publication_Date</th>
+							<th scope="col">price</th>
+							<th scope="col">genre</th>
+							<th scope="col">ACTION</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+
+					</tbody>
+				</table>
+				<div class="gap-0"></div>
+			</div>
+			<!--end code-->
+
+		</div>
+	</div>
+
+
+</div>
